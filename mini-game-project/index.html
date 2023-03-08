@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mini Game</title>
+</head>
+
+<body>
+    <div class="giris-sayfasi">
+        <div class="basamak-degerleri">
+            <div>
+                <label for="ilk-sayi">İLK SAYI KAÇ BASAMAKLI OLSUN</label>
+                <input type="text" name="" id="ilk-sayi" min="1" max="2">
+            </div>
+            <div>
+                <label for="ikinci-sayi">İKİNCİ SAYI KAÇ BASAMAKLI OLSUN</label>
+                <input type="text" name="" id="ikinci-sayi" min="1" max="2">
+            </div>
+        </div>
+        <div class="dort-islem-secim">
+            <h4>HANGİ İŞLEMİ YAPMAK İSTİYORSUNUZ ?</h4>
+            <div>
+                <label for="topla">Toplama</label>
+                <input type="checkbox" name="" id="topla">
+            </div>
+            <div>
+                <label for="cikar">Çıkarma</label>
+                <input type="checkbox" name="" id="cikar">
+            </div>
+            <div>
+                <label for="carp">Çarpma</label>
+                <input type="checkbox" name="" id="carp">
+            </div>
+            <div>
+                <label for="bolme">Bölme</label>
+                <input type="checkbox" name="" id="bolme">
+            </div>
+        </div>
+        <div class="zaman-secim">
+            <label for="">ZAMANI BELİRLEMEK İÇİN</label>
+            <small>SANİYE OLARAK BİR DEĞER GİRİN</small>
+            <input id="zaman-baslangic-input" type="text">
+        </div>
+        <button class="btn-grad" type="button" id="oyun-baslat">BAŞLAT</button>
+    </div>
+
+    <div class="oyun-sayfasi">
+        <button id="geri-don">GERİ DÖN</button>
+        <div class="soru-cevap-main">
+            <div class="soru-alani">
+                <span id="num1">-</span>
+                <span id="islem-sembol">+</span>
+                <span id="num2">-</span>
+                <span>=?</span>
+            </div>
+            <div class="input-btn-grup">
+                <input type="text" id="cevap-input" placeholder="Cevap">
+                <!-- <button id="cevap-btn-onay">ONAYLA</button> -->
+            </div>
+            <div class="geri-sayim-alan">
+                <span id="geri-sayim-zaman">--</span>
+            </div>
+        </div>
+        <div class="oyun-table">
+            <img src="./img/newroad.png" alt="" id="myRoad">
+            <img src="./img/car.png" alt="" id="myCar">
+        </div>
+    </div>
+
+
+    <!-- <script src="./custom.js"></script> -->
+    <script src="./deneme.js"></script>
+</body>
+
+</html>

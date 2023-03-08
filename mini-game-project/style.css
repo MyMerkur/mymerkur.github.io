@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Bangers', cursive;
+    /* font-family: 'Chakra Petch', sans-serif; */
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.giris-sayfasi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.basamak-degerleri {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #6e6eec 30%, #f07979 100%);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.basamak-degerleri div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.basamak-degerleri>div>input {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.dort-islem-secim {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.dort-islem-secim div {
+    width: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dort-islem-secim>div>input {
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.zaman-secim{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.zaman-secim input{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.oyun-sayfasi {
+    font-size: 2rem;
+    position: relative;
+    display: none;
+}
+
+#geri-don {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    border: 2px solid #222121;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+    background: none;
+}
+
+#geri-don:hover {
+    background-color: rgb(130, 186, 83);
+}
+
+.soru-cevap-main {
+    /* width: 200px; */
+    /* border: 5px solid #222121; */
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    z-index: 1;
+}
+
+.input-btn-grup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.soru-cevap-main>.input-btn-grup>button {
+    width: 100px;
+    height: 50px;
+}
+
+#cevap-input {
+    width: 100px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-style: none;
+    opacity: 0.8;
+}
+
+#cevap-input:focus {
+    outline: none;
+}
+
+.oyun-table {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(99, 116, 212) 0%, rgb(108, 150, 218) 50%, rgb(69, 188, 252) 100%);
+}
+
+#myRoad {
+    width: 60vw;
+}
+
+#myCar {
+    width: 10vw;
+    transform: rotateY(180deg);
+    position: absolute;
+    left: 880px;
+    bottom: 360px;
+    transition: all 1s ease;
+}
+
+@media screen and (max-width:896px) {
+    .oyun-sayfasi {
+        height: 100vh;
+        background: linear-gradient(0deg, rgb(99, 116, 212) 0%, rgb(108, 150, 218) 50%, rgb(69, 188, 252) 100%);
+    }
+
+    #myCar {
+        width: 20vw;
+        transform: rotateY(180deg);
+        position: absolute;
+        left: 220px;
+        bottom: 120px;
+        transition: all 1s ease;
+    }
+
+    #myRoad {
+        margin-top: 50px;
+        width: 90vw;
+    }
+
+    .soru-cevap-main {
+        width: 360px;
+        margin-top: 66%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .input-btn-grup {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .soru-cevap-main>.input-btn-grup>button {
+        width: 100px;
+        height: 50px;
+    }
+
+}

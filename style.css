@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./image/math.jpg);
+    background-size: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container h1{
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px 5px red;
+}
+.container h3{
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px 5px red;
+}
+.options{
+    display: flex;
+    justify-content: center;
+}
+.box-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 190px;
+    border: 2px solid red;
+    background-image: url(./image/race.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 3rem;
+}
+.box-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 190px;
+    border: 2px solid orange;
+    background-image: url(./image/basketbol.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+
+    <div class="container">
+        <div class="text">
+            <h4>OYNAMAK İSTEDİĞİNİZ İŞLEMİ SEÇİNİZ</h4>    
+            <div class="transaction">
+            
+                <button id="addition" onclick="addition()">Toplama</button>
+                <button id="extraction" onclick="extraction()">Çıkarma</button>
+                <button id="multiplication" onclick="multiplication()">Çarpma</button>
+                <button id="division" onclick="division()">Bölme</button>
+            </div>                 
+        </div>
+
+        <h3>LÜTFEN BASAMAK SAYILARINI GİRİNİZ</h3>
+        <div class="set">
+            <div class="inps">
+                <input id="first" placeholder="Basamak Sayısı" >              
+                <input id="second" placeholder="Basamak Sayısı" >       
+            </div>
+                  
+        <div class="btn-1">
+                          
+            <button id="start" onclick="baslat()">Baslat</button>
+        </div>
+
+        <div class="result-block">
+            <h1 id="question"></h1>
+            <input id="result" type="text" placeholder="Cevap" >
+            <button id="approve" >Onayla</button>
+        </div>
+        </div>
+            
+
+        <div class="platform">
+            <img id="tribune" src="./image/tribune.jpg" alt="tribune">
+            
+            <img id="tribune3" src="./image/tribune.jpg" alt="tribune">
+            <img id="tribune4" src="./image/tribune.jpg" alt="tribune">
+
+
+            <img id="court" src="./image/court.png" alt="court">
+            <img id="player1" src="./image/player.png" alt="player">
+            <img id="ball" src="./image/ball.png" alt="ball">          
+            <div class="count-1"></div>
+            <div class="count-2"></div>
+            <div class="countdown"></div>
+            <img id="player2" src="./image/player.png" alt="player2">
+            <img id="ball2" src="./image/ball.png" alt="ball2">
+        </div>
+        <div class="winMessage">
+            <h1>!!! Player Win !!!</h1>
+        </div>
+        <div class="loseMessage">
+            <h1>!!! Computer Win !!!</h1>
+        </div>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

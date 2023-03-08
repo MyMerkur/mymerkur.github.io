@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.container h3{
+    padding: 15px;
+    color: red;
+    text-shadow: 5px 5px 10px #000000;
+}
+.set{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid orange;
+    padding: 10px;
+}
+#first{
+    margin-top: 1rem;
+    width: 30%;
+    text-align: center;
+    border: 3px solid green;
+}
+#second{ 
+    margin-top: 1rem;
+    width: 30%;
+    text-align: center;
+    border: 3px solid green;
+}
+#start{
+    background-color: orangered;
+    color: yellow;
+    border: 0;
+    width: 80px;
+    height: 50px;
+}
+#start:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+#addition{
+    border: 0;
+    background-color: red;
+    color: yellow;
+    width: 60px;
+    height: 30px;
+}
+#addition:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+
+#extraction{
+    border: 0;
+    background-color: green;
+    color: black;
+    width: 60px;
+    height: 30px;
+}
+#extraction:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+#multiplication{
+    border: 0;
+    background-color: purple;
+    color: green;
+    width: 60px;
+    height: 30px;
+}
+#multiplication:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+#division{
+    border: 0;
+    background-color: rgb(0, 34, 128);
+    color: rgb(128, 0, 0);
+    width: 60px;
+    height: 30px;
+}
+#division:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+.btn-1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.btn-1 h1{text-align: center;}
+#result{
+    text-align: center;
+    width: 200px;
+    margin-top: 1rem;
+    border: 3px solid green;
+}
+#approve{
+    width: 100px;
+     border: 0;
+    background-color: rgb(128, 0, 0);
+    color: rgb(255, 255, 255);
+   
+    height: 30px;
+}
+#approve:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+.transaction{
+    display: flex;
+    
+}
+#question{text-align: center;}
+.result-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text h4{
+    padding: 15px;
+    color: red;
+    text-shadow: 5px 5px 10px #000000;
+}
+.inps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.platform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#court{
+    width: 1024px;
+    height: 500px;
+    position: relative;
+}
+#tribune{
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 175px;
+    margin-left: 120px;
+}
+
+#tribune3{
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 175px;
+    margin-left: 315px;
+}
+#tribune4{
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 175px;
+    margin-left: 574px;
+}
+#player1{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    margin-left:300px ;
+    margin-bottom: 80px;
+}
+#player2{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    margin-left:600px ;
+    margin-bottom: 80px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.count-1{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 8px solid rgba(248, 58, 0, 0.829);
+    position: absolute;
+    margin-left: 400px;
+    margin-bottom: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.count-2{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border: 8px solid rgba(0, 128, 248, 0.712);
+    position: absolute;
+    margin-left: 600px;
+    margin-bottom: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#ball{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left:310px ;
+    margin-bottom: 160px;
+    animation: ball 2s ;
+}
+#ball2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left:650px ;
+    margin-bottom: 160px;
+    animation: ball2 2s;   
+}
+.countdown{
+    display: flex;
+    width: 80px;
+    height: 50px;
+    border: 4px solid rgb(209, 14, 14);
+    position: absolute;
+    margin-left: 480px;
+    margin-bottom: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.winMessage{
+    color: rgb(46, 182, 46);
+    display: none;
+    position: absolute;  
+    margin-top: 25rem;
+    font-size: x-large;
+}
+.loseMessage{
+    color: red;
+    display: none;
+    position: absolute;  
+    margin-top: 25rem;
+    font-size: x-large;
+}
+@keyframes ball {
+    0%  {margin-left: 310px; margin-bottom: 160px;}
+    5%  {margin-left: 295px; margin-bottom: 190px;}
+    10% {margin-left: 280px; margin-bottom: 230px;}
+    15% {margin-left: 265px; margin-bottom: 220px;}
+    20% {margin-left: 250px; margin-bottom: 210px;}
+    25% {margin-left: 235px; margin-bottom: 205px;}
+    30% {margin-left: 220px; margin-bottom: 190px;}
+    35% {margin-left: 205px; margin-bottom: 180px;}
+    40% {margin-left: 190px; margin-bottom: 170px;} 
+    45% {margin-left: 180px; margin-bottom: 150px;}
+    50% {margin-left: 170px; margin-bottom: 130px;}
+    55% {margin-left: 165px; margin-bottom: 120px;}
+    60% {margin-left: 160px; margin-bottom: 110px;}
+    70% {margin-left: 160px; margin-bottom: 110px;}
+    80% {margin-left: 160px; margin-bottom: 90px;}
+    90% {margin-left: 160px; margin-bottom: 60px;}
+    100% {margin-left: 160px; margin-bottom: 40px;}  
+}
+
+@keyframes ball2 {
+    0% {margin-left: 650px; margin-bottom: 160px;}
+    10% {margin-left: 680px; margin-bottom: 230px;}
+    20% {margin-left: 710px; margin-bottom: 210px;}
+    30% {margin-left: 740px; margin-bottom: 190px;}
+    40% {margin-left: 770px; margin-bottom: 170px;}  
+    50% {margin-left: 800px; margin-bottom: 130px;}
+    60% {margin-left: 830px; margin-bottom: 110px;}
+    70% {margin-left: 840px; margin-bottom: 110px;}
+    80% {margin-left: 845px; margin-bottom: 90px;}
+    90% {margin-left: 850px; margin-bottom: 60px;}
+    100% {margin-left:855px; margin-bottom: 40px;}  
+}
